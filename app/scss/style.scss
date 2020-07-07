@@ -87,7 +87,100 @@
     }    
 }
 
-
-
-
 //-----End Header
+//-----Start Preview
+
+.preview {
+    background-color: #0d32bd;
+    color: #fff;
+}
+.preview__inner {
+    min-height: 725px;
+    text-align: center;
+    padding-top: 170px;
+    position: relative;
+    &-title {
+        font-size: 60px;
+        line-height: 70px;
+        span {
+            font-family: 'Quicksand-Bold', sans-serif;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    &-text {
+        font-family: 'Quicksand-Medium', sans-serif;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    &-btn {
+        padding: 18px 32px;
+        border: 1px solid #fff;
+        border-radius: 28px;
+        color: #fff;
+        transition: all .3s;
+        &:hover {
+            background-color: #fff;
+            color: $btn;
+        }
+    }
+    a + a {
+        margin-left: 30px;
+    }
+    &-box {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        transform: translateY(50%);
+        max-width: 1140px;
+        height: 135px;
+        background-color: #fff;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 6px;
+        padding-top: 60px;
+        z-index: 0;
+        &::before {
+            content: "";
+            background-image: url(../images/search-bg.png);
+            width: 1110px;
+            height: 135px;
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: 13px;
+            z-index: -1;
+        }
+        &::after {
+            content: "";
+            background-image: url(../images/search-bg-sec.png);
+            width: 1080px;
+            height: 135px;
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: 26px;
+            z-index: -2;
+        }
+    }
+}
+.preview__box-search {
+    max-width: 807px;
+    width: 100%;
+    position: relative;
+    
+}
+
+
+  
+
+
+
+
+
+
+//-----End Preview
+
