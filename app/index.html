@@ -69,16 +69,14 @@
                 <a href="#" class="preview__inner-btn">Popular Products</a>
                 <div class="preview__inner-box">
                     <div class="preview__box-search">
-                        <form>
+                        <form id="data">
                             <input type="text" placeholder="Search your products..." required>
-                            <nav>
-                                <ul class="preview__box-dropdown">
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                            </nav>
+                            <select class="dropdown" form="data">
+                                <option value="1">All new</option>
+                                <option value="2">Wordpress</option>
+                                <option value="3">Festures</option>
+                                <option value="4">Pages</option>
+                            </select>
                             <button type="submit">
                                 Search Now
                             </button>
