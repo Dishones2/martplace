@@ -522,4 +522,21 @@
   
 
 //-----End release
+//-----Start followers
+
+.followers {
+    background-color: #eff1f5;
+    padding: 120px 0;
+    &__title {
+        margin-bottom: 50px;
+    }
+    .slick-arrow {
+        background-color: $btn;
+    }
+}
+
+
+
+
+//-----End followers
 
