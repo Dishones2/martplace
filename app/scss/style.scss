@@ -338,12 +338,6 @@
 .slider__info-hearth {
     position: relative;
     padding-left: 25px;
-    &:hover {
-        color: $btn;
-    }
-    &:hover:before {
-        color: $btn;
-    }
     &::before {
         content: "\e813";
         position: absolute;
@@ -356,19 +350,14 @@
 .slider__info-basket {
     position: relative;
     padding-left: 25px;
-    &:hover {
-        color: $btn;
-    }
-    &:hover:before {
-        color: $btn;
-    }
+    color: $btn;
     &::before {
         content: "\e82e";
         position: absolute;
         left: 0;
         top: 0;
         font-family: 'Linearicons-Free';
-        color: $ico;
+        color: $btn;
     }
 }
 .slick-arrow {
@@ -397,4 +386,140 @@
 }
 
 //-----End slider
+//-----Start release
+
+.release {
+    background-color: #f6f7fb;
+    padding: 120px 0;
+}
+.release__title {
+    margin-bottom: 25px;
+}
+.release__inner-btn {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    margin-bottom: 50px;
+    button {
+        border:none;
+        border-radius: 16px;
+        background-color: $tag;
+        color: $tagtext;
+        padding: 10px 15px;
+        outline: none;
+        cursor: pointer;
+        &.mixitup-control-active {
+            background-color: $btn;
+            color: #fff;
+        }
+    }
+}
+.release__inner-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.release__item {
+    max-width: 360px;
+    min-height: 530px;
+    margin-bottom: 30px;
+    .slider__item-images {       
+        position: relative;
+        .slider__images-inner {
+            opacity: 0;
+            transition: all .3s linear;
+        }
+        &:hover .slider__images-inner{
+            opacity: 1;
+        } 
+        .slider__images-box {
+            position: absolute;
+            background: linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+            width: 360px;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                margin-top: auto;
+                margin-bottom: auto;
+                padding: 14px 30px;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 23px;
+                transition: all .3s;
+                & + a {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                    color: $btn;                                          
+                }
+            }
+        }
+        img {
+            width: 360px;
+            height: 230px;
+        }
+        
+    }
+    .slider__item-content {
+        padding: 30px 30px 15px;
+    }
+    .slider__item-title {
+        font-size: 20px;
+        color: #000;
+    }
+    .slider__info-price {
+        padding: 5px 15px;
+        background-color: #e6f1fd;
+        color: $btn;
+    }
+    .slider__item-info {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        border-top: none;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            border-top: 1px solid #ececec;
+            height: 1px;
+            width: 360px;
+            left: -30px;
+            top: 0;
+        }
+    }
+    .slider__info-hearth {
+        margin-left: 15px;
+        margin-right: 10px;
+        padding-left: 18px;
+    }
+    .slider__info-basket {
+        margin-left: auto;
+    }
+}
+.release__bottom-btn {
+    margin-top: 50px;
+    text-align: center;    
+    font-size: 16px;
+    button {
+        background-color: $btn;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        border:none;
+        padding: 20px 30px;
+        border-radius: 28px;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+  
+  
+
+//-----End release
 

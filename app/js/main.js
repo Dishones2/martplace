@@ -9,6 +9,13 @@ $(function(){
     $(".slider__info-star").rateYo({
         rating: 5,
         starWidth: "15px",
-      });
+    });
+
+    $(".release__info-star").rateYo({
+        rating: 5,
+        starWidth: "12px",
+    });
     
+    var mixer = mixitup('.release__inner-box');
+
 });
