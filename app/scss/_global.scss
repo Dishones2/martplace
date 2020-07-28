@@ -1,6 +1,10 @@
 html {
     box-sizing: border-box;
 }
+html,
+body {
+	height: 100%;
+}
 *,
 *::before,
 *::after {
@@ -20,6 +24,17 @@ body {
     font-family: 'Quicksand-Regular', sans-serif;
     font-size: 15px;
     color: $text;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
 }
 .container {
     max-width: 1170px;
