@@ -71,5 +71,30 @@ body {
         color: $text;
     }
 }
-
+.angle-left {
+    padding-left: 25px;
+    position: relative;
+    &::before {
+        content: "\e876";
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        font-size: 10px;
+    }
+}
+.circle-left {
+    padding-left: 25px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #7b818c;
+        border-radius: 50%;
+        left: 0;
+        top: 3px;
+    }
+}
   

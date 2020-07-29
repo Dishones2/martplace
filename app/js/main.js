@@ -24,6 +24,27 @@ $(function(){
         rating: 5,
         starWidth: "12px",
     });
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 350,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
+
+    $('.page__aside-category-btn').on('click', function(){
+        $('.category-list').slideToggle();
+    });
+
+    $('.page__aside-products-btn').on('click', function(){
+        $('.products-list').slideToggle();
+    });
+
+    $('.page__aside-range-btn').on('click', function(){
+        $('.page__aside-range-slider').slideToggle();
+    });
     
     var mixer = mixitup('.release__inner-box');
 
