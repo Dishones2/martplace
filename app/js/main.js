@@ -25,6 +25,11 @@ $(function(){
         starWidth: "12px",
     });
 
+    $(".list-star").rateYo({
+        rating: 5,
+        starWidth: "16px",
+    });
+
     $(".js-range-slider").ionRangeSlider({
         type: "double",
         min: 0,
@@ -32,6 +37,17 @@ $(function(){
         from: 30,
         to: 300,
         prefix: "$"
+    });
+
+    $('.page-menu__list').on('click', function(){
+        $('.page-release__item').toggleClass('list');
+        $('.page-menu__list').addClass('active');
+        $('.page-menu__grid').removeClass('active');
+    });
+    $('.page-menu__grid').on('click', function(){
+        $('.page-release__item').removeClass('list');
+        $('.page-menu__grid').addClass('active');
+        $('.page-menu__list').removeClass('active');
     });
 
     $('.page__aside-category-btn').on('click', function(){
